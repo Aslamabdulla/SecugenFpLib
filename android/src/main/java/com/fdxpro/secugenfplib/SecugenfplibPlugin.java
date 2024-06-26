@@ -378,7 +378,7 @@ public class SecugenfplibPlugin implements FlutterPlugin, MethodChannel.MethodCa
       error = sgfplib.OpenDevice(0);
 
       if(error == SGFDxErrorCode.SGFDX_ERROR_NONE) {
-
+Log.e(TAG, "Error Noneeee");
         isDeviceInitialized = true;
         SecuGen.FDxSDKPro.SGDeviceInfoParam deviceInfo = new SecuGen.FDxSDKPro.SGDeviceInfoParam();
         sgfplib.GetDeviceInfo(deviceInfo); //getting secugen usb device info
